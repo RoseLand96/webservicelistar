@@ -4,7 +4,7 @@ $db_host = "rmspavs8mpub7dkq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
      $db_user = "g1wbv4e6yvi6e710";
      $db_password = "t2z30tum76qfgrzd";
     
-     $connection = mysql_connect($db_host, $db_user, $db_password) or die("Connection Error: " . mysql_error());
+     $connection = mysql_connect($db_host, $db_user, $db_password) or die('Unable to Connect');
     
 mysql_select_db($db_name) or die("Error al seleccionar la base de datos:".mysql_error());
     @mysql_query("SET NAMES 'utf8'");
