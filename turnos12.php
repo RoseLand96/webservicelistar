@@ -1,5 +1,4 @@
 <?php
-header( 'Content-Type: text/html;charset=utf-8' );
 
 $db_host = "rmspavs8mpub7dkq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
      $db_name = "n3ycfw3efefiynuy";
@@ -9,7 +8,7 @@ $db_host = "rmspavs8mpub7dkq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
      $connection = mysqli_connect($db_host, $db_user, $db_password) or die("Connection Error: " . mysql_error());
     
 mysqli_select_db($db_name, $connection) or die("Error al seleccionar la base de datos:".mysql_error());
-    @mysql_query("SET NAMES 'utf8'");
+    @mysqli_query("SET NAMES 'utf8'");
     $dia=strftime("%A");
 
 if(isset($_POST["id_servicio"])  && $dia=="Monday" || $dia=="Lunes"){
