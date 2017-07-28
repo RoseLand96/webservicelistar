@@ -7,7 +7,7 @@ $db_host = "rmspavs8mpub7dkq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
      $connection = mysql_connect($db_host, $db_user, $db_password) or die('Unable to Connect');
     
 mysql_select_db($db_name) or die("Error al seleccionar la base de datos:".mysql_error());
-    @mysql_query("SET NAMES 'utf8'");
+    
 if(isset($_POST["nombre_servicio"])){
 
 $nombre_servicio= $_POST["nombre_servicio"];
